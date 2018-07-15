@@ -1,0 +1,9 @@
+#This program sums up the elements in a list
+
+def sum(l):
+    if l == []:
+        return 0
+    else:
+        return l[0]+sum(l[1:])
+
+sum([2, 4, 6])
