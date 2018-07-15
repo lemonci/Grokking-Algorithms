@@ -1,7 +1,7 @@
 # The aim of this program is to divide a rectangle into maximum equalized squares
 def sqr(l, w):
     if l % w != 0:
-        sqr(l, w) = sqr(w, l % w)
+        return sqr(w, l % w)
     else:
         return w
         
