@@ -1,4 +1,5 @@
 #This program will return the maximum value in a list
+#Option 1
 def max(l):
     if len(l) == 0:
         return "NA"
@@ -12,3 +13,10 @@ def max(l):
             l.pop(0)
             return max(l)
 max([2, 6, 4, 8, 7])
+
+#Option 2
+def max(list):
+    if len(list) == 2:
+        return list[0] if list[0] > list[1] else list[1]
+    sub_max = max(list[1:])
+    return list[0] if list[0] > sub_max else sub_max
