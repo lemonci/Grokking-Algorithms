@@ -1,0 +1,10 @@
+# The aim of this program is to divide a rectangle into maximum equalized squares
+def sqr(l, w):
+    if l % w != 0:
+        dc(l, w) = dc(w, l % w)
+    else:
+        return w
+        
+sqr(1680, 640)
+
+#Expected result is 80
